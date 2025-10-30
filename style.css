@@ -8,7 +8,7 @@
    Warning 1: this settings may change your layout.
    Warning 2: keep the * as selector for all tags when uncommenting. */
 /*  * {border: 1px dotted black;}   */
-  
+
 /* Add semi-transparant dark background to all boxes
    The more boxes are on top of eachother the darker tghe background color
    Warning: keep the * as selector for all tags when uncommenting. */
@@ -18,7 +18,7 @@
 
 /* Settings to make it easier for you
    uncomment permanently when you understand the meaning of them */
-   
+
 /* border is included in width en height of boxes */
 /* * { box-sizing: border-box; } */
 
@@ -35,4 +35,35 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+body {
+   display: grid;
+   grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+   grid-template-rows: 60px 60px 1fr 120px;
+}
+
+header {
+   background-color: rgb(9, 0, 139);
+   grid-area: header;
+}
+
+nav { 
+   background-color: rgb(61, 43, 226);
+   grid-area: nav;
+}
+
+main {
+   
+   background-color: rgb(0, 102, 255);
+   grid-area: main;
+}
+
+footer {
+   background-color: rgb(0, 140, 255);
+   grid-area: footer;
+}
 
