@@ -43,7 +43,7 @@ body {
       "nav"
       "main"
       "footer";
-   grid-template-rows: 60px 60px 1fr 120px;
+   grid-template-rows: 60px 100px 1fr 120px;
 }
 
 header {
