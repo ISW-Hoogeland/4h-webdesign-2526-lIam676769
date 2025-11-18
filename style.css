@@ -43,6 +43,7 @@
   --dark: #1B263B;
   --accent: #F4D35E;
   --font: "Arial", sans-serif;
+}
 
 body {
   margin: 0;
@@ -51,14 +52,22 @@ body {
   grid-template-rows: auto auto 1fr auto;
   min-height: 100vh;
   background: var(--light);
+}
 
-  header {
+/* ---------------------------
+   Header
+---------------------------- */
+header {
   background: var(--dark);
   color: var(--light);
   padding: 25px;
   text-align: center;
+}
 
-  nav {
+/* ---------------------------
+   Navigation
+---------------------------- */
+nav {
   background: var(--primary);
   padding: 10px 0;
 }
