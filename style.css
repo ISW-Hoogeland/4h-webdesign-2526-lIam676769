@@ -36,34 +36,73 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 
+:root {
+  --primary: #385474;
+  --secondary: #778DA9;
+  --light: #b6babf;
+  --dark: #1B263B;
+  --accent: #F4D35E;
+  --font: "Arial", sans-serif;
+
 body {
-   display: grid;
-   grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-   grid-template-rows: 60px 100px 1fr 120px;
+  margin: 0;
+  font-family: var(--font);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  background: var(--light);
+
+  header {
+  background: var(--dark);
+  color: var(--light);
+  padding: 25px;
+  text-align: center;
+
+  nav {
+  background: var(--primary);
+  padding: 10px 0;
 }
 
-header {
-   background-color: rgb(9, 0, 139);
-   grid-area: header;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
-nav { 
-   background-color: rgb(61, 43, 226);
-   grid-area: nav;
+nav a {
+  text-decoration: none;
+  color: var(--light);
+  padding: 10px 15px;
+  border-radius: 6px;
 }
 
+nav a:hover {
+  background: var(--accent);
+  color: black;
+}
+
+/* ---------------------------
+   Main content
+---------------------------- */
 main {
-   
-   background-color: rgb(0, 102, 255);
-   grid-area: main;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* ---------------------------
+   Footer
+---------------------------- */
 footer {
-   background-color: rgb(0, 140, 255);
-   grid-area: footer;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
 }
-
